@@ -1,0 +1,12 @@
+Advantage:
+	-do movement;
+		e.g. //CharacterController cc = ...;
+		cc.move(Vector3);
+	-do not affect by the forces
+	-will be constrained by the collision
+		detect collision -> send message -> trigger some special events;
+
+Public Methods:(V2018.2)
+	Move(Vector3);
+	SimpleMove(Vector3);
+	//only one method per frame is recommended

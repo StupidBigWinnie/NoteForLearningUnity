@@ -1,0 +1,12 @@
+MouseLook :
+	Horizontal look(attach to the characterController -> directly change player's direction)
+	Vertical look(attach to the camera -> in case the characterController fly when looking upwards)
+
+FPSInput :
+	1st
+		-Vertical/Horizontal movement
+		-stay on floor
+	wants:
+		+Jump movement
+		+Rush movement
+		+Sit movement
