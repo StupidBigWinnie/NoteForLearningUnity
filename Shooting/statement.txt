@@ -1,0 +1,10 @@
+1.StartCoroutine(Coroutine routine);
+	private IEnumerator RoutineName(Type args){
+		//code
+	}
+
+2.GUI.Label(rect position, string text);
+
+3.Physics.Raycast(Ray ray, out RaycastHit hit);
+
+4.cam.ScreenPointToRay(Vector3 pos);
