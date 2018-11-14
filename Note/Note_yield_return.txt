@@ -1,0 +1,1 @@
+return and remember the current location at the same time.

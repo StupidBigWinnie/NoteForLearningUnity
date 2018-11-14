@@ -23,6 +23,7 @@ public class Fireball : MonoBehaviour{
 }
 
 //OnTriggerEnter(coll) will be called when the collider enters coll.
+//Send message to the *trigger* collider.
 //Add contents in OnTriggerEnter to do something.
 //	-hurt that coll
 //	-give coll a reward

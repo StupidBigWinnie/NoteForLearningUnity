@@ -22,13 +22,16 @@ public class RayShooter : MoneBehaviour{
 			//RaycastHit : a bunch of information of this ray, including the point of hit place.
 
 			if(Physics.Raycast(ray, out hit)){ //To detect whether this ray hit something in the scene
-				StartCoroutine(HitSomething(hit.point)); 
+				//StartCoroutine(HitSomething(hit.point)); 
+				//Since ReactiveTarget has been given, let's use ReactToHit!
+				StartCoroutine(HitSomething(hit.collider)); //this collider has the ReactiveTarget component
 			}
 		}
 	}
 
-	private IEnumerator HitSomething(Vector3 pos){ //The coroutine
+	private IEnumerator HitSomething(Collider coll){ //The coroutine
 		//code for reacting to being hit
+		coll.ReactToHit();
 	}
 
 	void OnGUI(){
