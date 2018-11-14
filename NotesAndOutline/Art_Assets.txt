@@ -1,0 +1,30 @@
+	• Art assets
+		○ containing visual information
+			§ image
+			§ 3D model
+			§ Material (surface of 3D object)
+			§ Animation(movement)
+			§ Particle system(useful for visual effects)
+	• Whiteboxing
+		○ blocking out the scene with blank geometry
+			§ level design(roughly)
+			§ reach the primitive version of Gameplay quickly(allows modification at the very beginning)
+		○ A floor plan for this level
+			§ Drawing a top-down map may be helpful
+			§ Primitive organization of player and enermy…
+		○ Build a simple scene with basic geometry objects and play around
+	• Textture
+		○ (a 2d image) displayed on 3D objects
+			§ wallpaper/floor…
+		○ file format of texture
+			§ should consider the alpha channel
+				□ alpha channel: a channel controls the transparency
+			§ should consider the image compression
+			§ Suggest : PNG/TGA
+			§ prefer to be tileable
+				□ for efficiency : image size is supposed to be 2^n (pixel?)
+				□ can be used to create a material(In Albedo)
+				□ modify the tiling number
+	• 3D models
+		○ suggested to be FBX files(ceated in Blender)
+		
